@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+data/*.csv
+results/*.png
+results/metrics.json
+results/identity_mapping.json
