@@ -1,0 +1,206 @@
+{
+  "protocol": {
+    "n_users": 40,
+    "trial_unit": "mean of held-out probes per (actual, claimed) identity",
+    "note": "Artificial cross-dataset identity pairing; not contemporaneous biometric capture"
+  },
+  "rq1": {
+    "face": {
+      "eer": 0.0919871794871795,
+      "d_prime": 2.4291923101762087,
+      "far_at_eer": 0.09230769230769231,
+      "frr_at_eer": 0.09166666666666666,
+      "threshold": -53.838924407958984
+    },
+    "keystroke": {
+      "eer": 0.23166666666666666,
+      "d_prime": 0.5708771874945002,
+      "far_at_eer": 0.23166666666666666,
+      "frr_at_eer": 0.23166666666666666,
+      "threshold": -3.8819998171852004
+    }
+  },
+  "rq2": {
+    "face_only": {
+      "eer": 0.075,
+      "d_prime": 2.747968932505686,
+      "far_at_eer": 0.075,
+      "frr_at_eer": 0.075,
+      "threshold": 1.018310983390115
+    },
+    "keystroke_only": {
+      "eer": 0.175,
+      "d_prime": 1.353565107864855,
+      "far_at_eer": 0.175,
+      "frr_at_eer": 0.175,
+      "threshold": 0.7734224753398383
+    },
+    "equal_weight_fusion": {
+      "eer": 0.05,
+      "d_prime": 2.854722270129131,
+      "far_at_eer": 0.05,
+      "frr_at_eer": 0.05,
+      "threshold": 0.8397746518109709
+    }
+  },
+  "rq3": {
+    "0.0": {
+      "validation": {
+        "eer": 0.2,
+        "d_prime": 1.4071346780412295,
+        "far_at_eer": 0.2,
+        "frr_at_eer": 0.2,
+        "threshold": 0.7455249105358407
+      },
+      "test": {
+        "eer": 0.175,
+        "d_prime": 1.353565107864855,
+        "far_at_eer": 0.175,
+        "frr_at_eer": 0.175,
+        "threshold": 0.7734224753398383
+      }
+    },
+    "0.25": {
+      "validation": {
+        "eer": 0.125,
+        "d_prime": 2.2052182920067582,
+        "far_at_eer": 0.125,
+        "frr_at_eer": 0.125,
+        "threshold": 0.7164254211342875
+      },
+      "test": {
+        "eer": 0.075,
+        "d_prime": 2.09519309438768,
+        "far_at_eer": 0.075,
+        "frr_at_eer": 0.075,
+        "threshold": 0.8018621254178352
+      }
+    },
+    "0.5": {
+      "validation": {
+        "eer": 0.05,
+        "d_prime": 3.0379741015837034,
+        "far_at_eer": 0.05,
+        "frr_at_eer": 0.05,
+        "threshold": 0.8709001422153402
+      },
+      "test": {
+        "eer": 0.05,
+        "d_prime": 2.854722270129131,
+        "far_at_eer": 0.05,
+        "frr_at_eer": 0.05,
+        "threshold": 0.8397746518109709
+      }
+    },
+    "0.75": {
+      "validation": {
+        "eer": 0.025,
+        "d_prime": 3.1805357675691934,
+        "far_at_eer": 0.025,
+        "frr_at_eer": 0.025,
+        "threshold": 1.0926352280665264
+      },
+      "test": {
+        "eer": 0.075,
+        "d_prime": 3.0480257962919133,
+        "far_at_eer": 0.075,
+        "frr_at_eer": 0.075,
+        "threshold": 0.8149602116882761
+      }
+    },
+    "1.0": {
+      "validation": {
+        "eer": 0.028846153846153848,
+        "d_prime": 2.78471745026816,
+        "far_at_eer": 0.032692307692307694,
+        "frr_at_eer": 0.025,
+        "threshold": 1.3408857891883188
+      },
+      "test": {
+        "eer": 0.075,
+        "d_prime": 2.747968932505686,
+        "far_at_eer": 0.075,
+        "frr_at_eer": 0.075,
+        "threshold": 1.018310983390115
+      }
+    },
+    "selected_weight_from_validation": 0.75,
+    "selected_test": {
+      "eer": 0.075,
+      "d_prime": 3.0480257962919133,
+      "far_at_eer": 0.075,
+      "frr_at_eer": 0.075,
+      "threshold": 0.8149602116882761
+    }
+  },
+  "hw3": {
+    "rq1_face": {
+      "eer": 0.09252136752136714,
+      "threshold": 0.7346000000000001,
+      "d_prime": 2.3585162854385793,
+      "far_at_eer": 0.09337606837606836,
+      "frr_at_eer": 0.09166666666666591,
+      "n_genuine": 120,
+      "n_impostor": 4680,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq1_keystroke": {
+      "eer": 0.23184027777777777,
+      "threshold": 0.6368000000000001,
+      "d_prime": 1.120521439854982,
+      "far_at_eer": 0.23284722222222223,
+      "frr_at_eer": 0.23083333333333328,
+      "n_genuine": 4800,
+      "n_impostor": 187200,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq2_face_only": {
+      "eer": 0.07499999999999904,
+      "threshold": 0.7346000000000001,
+      "d_prime": 2.6240549687267296,
+      "far_at_eer": 0.07499999999999996,
+      "frr_at_eer": 0.07499999999999812,
+      "n_genuine": 40,
+      "n_impostor": 1560,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq2_keystroke_only": {
+      "eer": 0.17499999999999777,
+      "threshold": 0.6842000000000001,
+      "d_prime": 1.4409510750726389,
+      "far_at_eer": 0.1749999999999999,
+      "frr_at_eer": 0.1749999999999956,
+      "n_genuine": 40,
+      "n_impostor": 1560,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq2_equal_fusion": {
+      "eer": 0.04967948717948654,
+      "threshold": 0.7700000000000001,
+      "d_prime": 2.6250041906875703,
+      "far_at_eer": 0.04935897435897433,
+      "frr_at_eer": 0.04999999999999875,
+      "n_genuine": 40,
+      "n_impostor": 1560,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq3_selected_fusion": {
+      "eer": 0.07499999999999904,
+      "threshold": 0.7388000000000001,
+      "d_prime": 2.834404710580845,
+      "far_at_eer": 0.07499999999999996,
+      "frr_at_eer": 0.07499999999999812,
+      "n_genuine": 40,
+      "n_impostor": 1560,
+      "score_calibration": "validation-standardized logistic [0, 1]",
+      "method": "course HW3 Evaluator; 2001 fixed thresholds in [-0.1, 1.1]"
+    },
+    "rq3_selected_weight": 0.75
+  },
+  "data_status": "REAL_PUBLIC_DATASETS_SIMULATED_PAIRING"
+}
